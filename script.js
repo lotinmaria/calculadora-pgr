@@ -17,7 +17,36 @@
       this.currentOperation = digit;
       this.updateScreen();
    }
-   updateScreen(){
+
+   // Process all calculator operations
+
+   processOperation(operation){
+      
+      // Get current and previous values
+      let operationsValue;
+      const prvious = +this.previousOperationText.innerText;
+      const current = +this.currentOperationText.innerText;
+
+      switch (operation) {
+         case "+":
+            operationsValue = previous + current;
+            this.updateScreen(operationsValue, operation, current, previous);
+            break;
+      
+         default:
+            return;
+      }
+
+   }
+   // Change values of the calculator screen
+   updateScreen(operationsValue = null, 
+      operation = null, 
+      current = null, 
+      previous = null
+      ){
+
+      console.log(operationsValue, operation, current, previous)
+      
       this.currentOperationText.innerText += this.currentOperation;
    }
  }
@@ -29,7 +58,7 @@ const calc = new Calculator (previousOperationText, currentOperationText);
         if (+value >= 0 || value === ".") {
          calc.addDigit(value);
         } else {
-         console.log("Op: " + value)
+         calc.processOperation(value);
         }
     });
  });
