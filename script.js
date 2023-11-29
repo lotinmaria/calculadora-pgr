@@ -24,7 +24,7 @@
       
       // Get current and previous values
       let operationsValue;
-      const prvious = +this.previousOperationText.innerText;
+      const previous = +this.previousOperationText.innerText;
       const current = +this.currentOperationText.innerText;
 
       switch (operation) {
