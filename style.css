@@ -13,31 +13,33 @@ body{
 }
 #calc{
     width: 400px;
-    padding: .5em;
+    padding: 0.5em;
     background-color: #c4c4c4;
     color: #000;
     display: flex;
     flex-direction: column ;
 }
 #calc h3{
-    font-size: .8em;
+    font-size: 0.8em;
     font-weight: 300;
     color: #666;
 }
 #operations{
     text-align: right;
 }
-#previous-operation,
-#current-operation{
-    min-height: 1.6em;
-    padding: 0.2em;
-}
 #previous-operation{
     color: #777;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
 }
+
 #current-operation{
+    min-height: 1.6em;
     font-size: 3em;
-    font-weight: 700;;
+    font-weight: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
 }
 #buttons-container{
     display: grid;
@@ -61,7 +63,7 @@ body{
 }
 #buttons-container #equal-btn{
     grid-column: span 2;
-    background-color: #75a5cd;
+    background-color: #75a5cb;
 }
 #buttons-container #equal-btn:hover{
     background-color: #3a91d8;  
