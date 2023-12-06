@@ -4,18 +4,16 @@ const resultado = document.querySelector(".result");
 const conta = document.getElementById("conta");
 const confirmar = document.querySelector(".igual");
 
-/*O insert significa que eu quero inserir alguma coisa. */
+
 function insert(valor) {
   conta.innerHTML += valor;
 }
 
-/*A função clean é usada para limpar tudo que tá dentro do <p> */
 function clean() {
   resultado.innerHTML = " ";
   conta.innerHTML = " ";
 }
 
-/*backspace é usada quando eu quero apagar somente o ultimo digito */
 function backspace() {
   if (conta.textContent) {
     let result = document.getElementById("conta").innerHTML;
@@ -23,14 +21,12 @@ function backspace() {
   }
 }
 
-/*confirma é para enviar o resultado final ao p quando clicar no = */
 function confirma() {
   if (resultado.textContent != "Erro") {
     document.getElementById("resultado").innerHTML = eval(conta.innerHTML);
   }
 }
 
-/*verifica se uma tecla é apertada*/
 document.addEventListener("keydown", (event) => {
   const keyName = event.key;
 
