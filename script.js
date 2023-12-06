@@ -1,4 +1,4 @@
-/*é colocado dentro dos parenteses do querySelector oq queremos selecionar,
+/*é colocado dentro dos parenteses do querySelector o que queremos selecionar,
 neste caso sendo o .result(ponto usado por se referir a uma classe), a mesma coisa com o .igual*/
 const resultado = document.querySelector(".result");
 const conta = document.getElementById("conta");
@@ -15,7 +15,7 @@ function clean() {
   conta.innerHTML = " ";
 }
 
-/*backspace é para qunado eu quero apagar somente o ultimo digito */
+/*backspace é usada quando eu quero apagar somente o ultimo digito */
 function backspace() {
   if (conta.textContent) {
     let result = document.getElementById("conta").innerHTML;
