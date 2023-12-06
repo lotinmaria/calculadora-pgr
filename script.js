@@ -4,7 +4,7 @@ const resultado = document.querySelector(".result");
 const conta = document.getElementById("conta");
 const confirmar = document.querySelector(".igual");
 
-/*O insert significa que eu quero inserir aluma coisa. */
+/*O insert significa que eu quero inserir alguma coisa. */
 function insert(valor) {
   conta.innerHTML += valor;
 }
