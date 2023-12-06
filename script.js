@@ -1,5 +1,5 @@
 /*é colocado dentro dos parenteses do querySelector o que queremos selecionar,
-neste caso sendo o .result(ponto usado por se referir a uma classe), a mesma coisa com o .igual*/
+neste caso sendo o .result(ponto usado por se referir a uma classe) a mesma coisa com o .igual*/
 const resultado = document.querySelector(".result");
 const conta = document.getElementById("conta");
 const confirmar = document.querySelector(".igual");
